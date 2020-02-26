@@ -1,0 +1,102 @@
+@article{Tague2004d,
+abstract = {Process-based models that can represent multiple and interacting processes provide a framework for combining field-based measure- ments with evolving science-based models of specific hydroecological processes. Use of these models, however, requires that the representation of processes and key assumptions involved be understood by the user community. This paper provides a full description of process implementation in the most recent version of the Regional Hydro-Ecological Simulation System (RHESSys), a model that has been applied in a wide variety of research settings. An overview of the underlying (Geographic Information System) GIS- based model framework is given followed by a description of the mathematical models used to represent various biogeochemical cycling and hydrologic processes including vertical and lateral hydrologic fluxes, microclimate variability, canopy radiation transfer, vegetation and soil microbial carbon and nitrogen cycling. An example application of RHESSys for a small forested watershed as part of the Baltimore Long-Term Ecological Research site is included to illustrate use of the model in exploring spatial-temporal dynamics and the coupling between hydrology and biogeochemical cycling.},
+author = {Tague, C L and Band, L E},
+file = {:C$\backslash$:/Users/sonk739/OneDrive - PNNL/papers/Tague, Band - 2004 - RHESSys Regional Hydro-Ecologic Simulation System — An object-oriented approach to spatially distributed modeling.pdf:pdf},
+journal = {Earth Interactions},
+keywords = {ecosystems,hydrology,modeling},
+number = {19},
+title = {{RHESSys : Regional Hydro-Ecologic Simulation System — An object-oriented approach to spatially distributed modeling of carbon , water , and nutrient cycling}},
+volume = {8},
+year = {2004}
+}
+@article{Shi2018,
+abstract = {Terrestrial carbon processes are affected by soil moisture, soil temperature, nitrogen availability and solar radiation, among other factors. Most of the current ecosystem biogeochemistry models represent one point in space, and have limited characterization of hydrologic processes. Therefore, these models can neither resolve the topographically driven spatial variability of water, energy, and nutrient, nor their effects on carbon processes. A spatially-distributed land surface hydrologic biogeochemistry model, Flux-PIHM-BGC, is developed by coupling the Biome-BGC model with a physically-based land surface hydrologic model, Flux-PIHM. In the coupled system, each Flux-PIHM model grid couples a 1-D Biome-BGC model. In addition, a topographic solar radiation module and an advection-driven nitrogen transport module are added to represent the impact of topography on nutrient transport and solar energy distribution. Because Flux-PIHM is able to simulate lateral groundwater flow and represent the land surface heterogeneities caused by topography, Flux-PIHM-BGC is capable of simulating the complex interaction among water, energy, nutrient, and carbon in time and space. The Flux-PIHM-BGC model is tested at the Susquehanna/Shale Hills Critical Zone Observatory. Model results show that distributions of carbon and nitrogen stocks and fluxes are strongly affected by topography and landscape position, and tree growth is nitrogen limited. The predicted aboveground and soil carbon distributions generally agree with the macro patterns observed. Although the model underestimates the spatial variation, the predicted watershed average values are close to the observations. The coupled Flux-PIHM-BGC model provides an important tool to study spatial variations in terrestrial carbon and nitrogen processes and their interactions with environmental factors, and to predict the spatial structure of the responses of ecosystems to climate change.},
+author = {Shi, Yuning and Eissenstat, David M. and He, Yuting and Davis, Kenneth J.},
+doi = {10.1016/j.ecolmodel.2018.04.007},
+file = {:C$\backslash$:/Users/sonk739/OneDrive - PNNL/papers/Shi et al. - 2018 - Using a spatially-distributed hydrologic biogeochemistry model with a nitrogen transport module to study the spatial.pdf:pdf},
+issn = {03043800},
+journal = {Ecological Modelling},
+keywords = {Critical Zone Observatory,Ecohydrology,Nitrogen transport,Spatial patterns},
+number = {March},
+pages = {8--21},
+publisher = {Elsevier},
+title = {{Using a spatially-distributed hydrologic biogeochemistry model with a nitrogen transport module to study the spatial variation of carbon processes in a Critical Zone Observatory}},
+url = {https://doi.org/10.1016/j.ecolmodel.2018.04.007},
+volume = {380},
+year = {2018}
+}
+@article{Shi2013,
+author = {Shi, Yuning and Davis, Kenneth J. and Duffy, Christopher J. and Yu, Xuan},
+doi = {10.1175/JHM-D-12-0145.1},
+file = {:C$\backslash$:/Users/sonk739/OneDrive - PNNL/papers//Shi et al. - 2013 - Development of a Coupled Land Surface Hydrologic Model and Evaluation at a Critical Zone Observatory.pdf:pdf},
+issn = {1525-755X},
+journal = {Journal of Hydrometeorology},
+month = {oct},
+number = {5},
+pages = {1401--1420},
+title = {{Development of a Coupled Land Surface Hydrologic Model and Evaluation at a Critical Zone Observatory}},
+url = {http://journals.ametsoc.org/doi/abs/10.1175/JHM-D-12-0145.1},
+volume = {14},
+year = {2013}
+}
+@phdthesis{Qu2004,
+abstract = {This thesis presents (1) a strategy to build an integrated hydrologic model using the semi-discrete finite volume approach; (2) the development of the Penn State Integrated Hydrologic Model (PIHM), an implementation of above theory with object-oriented data-model; (3) the verification and field application of PIHM to Shale Hills experiment in central Pennsylvania. Numerical simulation of coupled non-linear hydrologic processes requires an efficient and flexible approach to solve a mixture of governing partial differential equations (PDE) and ordinary differential equations (ODE). A new strategy for integrated hydrological modeling is proposed in this thesis. First, those PDE's are reduced to ODE's using the semi-discrete finite volume method (FVM). This leads to a local ODE system (referred to as the model kernel). The kernel is distributed on an unstructured triangular irregular network (TIN) constructed from domain decomposition using Delaunay Triangulation. The global ODE system is formed by combining all local ODE systems over the entire domain and the system is solved with an efficient ODE solver. This strategy is designed to capture “dynamics” in multiple processes while maintaining the conservation of mass at all cells, as guaranteed by the finite volume formulation. A hypothetical test case is presented to demonstrate the flexibility and utility of this model. The implementation and code verification of the above strategy, PIHM, is also discussed in this thesis. The model is coded in C with an object-oriented data-model, one that is widely used in geographic information system (GIS) literature. The goal of the data structure used here is to ultimately connect the model and the solver with a GIS pre and post processors in a seamless manner, e.g. without the intermediate text files. In a seamless hydrologic modeling strategy, the numerical model and its pre/post-processor operate on the same data-model (referred to as a geo-database), which enables faster access of raw data and supports advanced user inquiries and visualization of the model results. The PIHM code is verified against analytic solution and other hydrologic models for several cases. For groundwater flow alone, the model converges to analytic solutions for radial groundwater flow to a well. For surface overland flow and channel routing within a v-shaped catchment, PIHM agrees well with other models using finite difference and finite element methods. The first field application of PIHM is the Shale Hills Experiment (http://www.cee.psu.edu/Shale Hills/). In 1974, a field experiment is conducted at the Shale Hills, a watershed in central Pennsylvania, to investigate the hillslope runoff response to multiple rainfall events. The data reveals that more than 37{\%} of rainfall is stored in the aquifer during each rainfall event. It was also shown experimentally that groundwater recharges and relaxes over a fairly long time scale ({\~{}}weeks). The actual percentage of rainfall stored in the aquifer during rainfall events depends on the antecedent soil moisture, e.g. the initial conditions for soil moisture. Since the antecedent soil moisture builds up gradually during the series of storms, the runoff response increases noticeably in Shale Hills experiment. The ephemeral channel in the upland region of the watershed at Shale Hills expands and shrinks during rainfall events. The flowing portion of the stream cannot be pre-determined, and represents a physical process that challenges current models that do not fully-couple channel routing with overland and groundwater flow. It is well-resolved in the simulation with the new approach proposed in this thesis. PIHM results clearly reflect the change in channel length and agree well with experiment observations. Both field data and numerical results agree that all of three major rainfall-runoff generation mechanisms take place at Shale Hills. Among them, saturation overland flow is the most important contributor to the total runoff. With this feedback mechanism, subsurface hydrologic processes modulate surface runoff generation where the water table saturates the surface. The area of saturation is interpolated from soil moisture numerical results captures soil moisture building up during the entire simulation. The numerical results reveal that the saturation area is discontinuous and after each successive storm event, evolves from a disconnected patchwork of saturated elements to a highly connected network of saturated elements in what might be called “patch dynamics”. Much of this effect is the result of local complex terrain as the hydraulic conductivity used is relatively homogeneous. Although the application is for a small ({\~{}}20 acre) watershed, it demonstrates the magnitude and timing of feedback processes when full coupling of all physical processes are implemented in the model.},
+author = {Qu, Yizhong},
+file = {:C$\backslash$:/Users/sonk739/OneDrive - PNNL/papers/Qu - 2004 - An integrated hydrologic model for multi-process simulation using semi-discrete finite volume approach.pdf:pdf},
+number = {December},
+pages = {143},
+title = {{An integrated hydrologic model for multi-process simulation using semi-discrete finite volume approach}},
+year = {2004}
+}
+@article{Klos2018,
+abstract = {Enhanced understanding of subsurface water storage will improve prediction of future impacts of climate change, including drought, forest mortality, wildland fire, and strained water security. Previous research has examined the importance of plant-accessible water in soil, but in upland landscapes within Mediterranean climates, soil often accounts for only a fraction of subsurface water storage. We draw insights from previous research and a case study of the Southern Sierra Critical Zone Observatory to define attributes of subsurface storage; review observed patterns in their distribution; highlight nested methods for estimating them across scales; and showcase the fundamental processes controlling their formation. We review observations that highlight how forest ecosystems subsist on lasting plant-accessible stores of subsurface water during the summer dry period and during multiyear droughts. The data suggest that trees in these forest ecosystems are rooted deeply in the weathered, highly porous saprolite or saprock, which reaches up to 10–20 m beneath the surface. This review confirms that the system harbors large volumes of subsurface water and shows that they are vital to supporting the ecosystem through the summer dry season and extended droughts. This research enhances understanding of deep subsurface water storage across landscapes and identifies key remaining challenges in predicting and managing response to climate and land use change in mountain ecosystems of the Sierra Nevada and in other Mediterranean climates worldwide. This article is categorized under: * Science of Water {\textgreater} Hydrological Processes * Science of Water {\textgreater} Water Quality * Water and Life {\textgreater} Nature of Freshwater Ecosystems},
+author = {Klos, P. Zion and Goulden, Michael L. and Riebe, Clifford S. and Tague, Christina L. and O'Geen, A. Toby and Flinchum, Brady A. and Safeeq, Mohammad and Conklin, Martha H. and Hart, Stephen C. and Berhe, Asmeret Asefaw and Hartsough, Peter C. and Holbrook, W. Steven and Bales, Roger C.},
+doi = {10.1002/wat2.1277},
+file = {:C$\backslash$:/Users/sonk739/OneDrive - PNNL/papers//Klos et al. - 2018 - Subsurface plant-accessible water in mountain ecosystems with a Mediterranean climate.pdf:pdf},
+isbn = {2049-1948},
+issn = {20491948},
+journal = {Wiley Interdisciplinary Reviews: Water},
+number = {May 2017},
+pages = {e1277},
+title = {{Subsurface plant-accessible water in mountain ecosystems with a Mediterranean climate}},
+url = {http://doi.wiley.com/10.1002/wat2.1277},
+year = {2018}
+}
+@article{Bales2018,
+abstract = {{\textcopyright} 2018 The Author(s). Mountain runoff ultimately reflects the difference between precipitation (P) and evapotranspiration (ET), as modulated by biogeophysical mechanisms that intensify or alleviate drought impacts. These modulating mechanisms are seldom measured and not fully understood. The impact of the warm 2012-15 California drought on the heavily instrumented Kings River basin provides an extraordinary opportunity to enumerate four mechanisms that controlled the impact of drought on mountain hydrology. Two mechanisms intensified the impact: (i) evaporative processes have first access to local precipitation, which decreased the fractional allocation of P to runoff in 2012-15 and reduced P-ET by 30{\%} relative to previous years, and (ii) 2012-15 was 1 °C warmer than the previous decade, which increased ET relative to previous years and reduced P-ET by 5{\%}. The other two mechanisms alleviated the impact: (iii) spatial heterogeneity and the continuing supply of runoff from higher elevations increased 2012-15 P-ET by 10{\%} relative to that expected for a homogenous basin, and iv) drought-associated dieback and wildfire thinned the forest and decreased ET, which increased 2016 P-ET by 15{\%}. These mechanisms are all important and may offset each other; analyses that neglect one or more will over or underestimate the impact of drought and warming on mountain runoff.},
+author = {Bales, Roger C. and Goulden, Michael L. and Hunsaker, Carolyn T. and Conklin, Martha H. and Hartsough, Peter C. and O'Geen, Anthony T. and Hopmans, Jan W. and Safeeq, Mohammad},
+doi = {10.1038/s41598-017-19007-0},
+file = {:C$\backslash$:/Users/sonk739/OneDrive - PNNL/papers/Bales et al. - 2018 - Mechanisms controlling the impact of multi-year drought on mountain hydrology.pdf:pdf},
+issn = {20452322},
+journal = {Scientific Reports},
+month = {dec},
+number = {1},
+publisher = {Nature Publishing Group},
+title = {{Mechanisms controlling the impact of multi-year drought on mountain hydrology}},
+volume = {8},
+year = {2018}
+}
+@book{qu2005integrated,
+  title={An integrated hydrologic model for multi-process simulation using semi-discrete finite volume approach},
+  author={Qu, Yizhong},
+  year={2005},
+  publisher={The Pennsylvania State University}
+}
+
+@phdthesis{thornton1998regional,
+  title={Regional ecosystem simulation: combining surface-and satellite-based observations to study linkages between terrestrial energy and mass budgets},
+  author={Thornton, Peter Edmond},
+  year={1998},
+  publisher={The University of Montana}
+}
+
+@article{parton1996generalized,
+  title={Generalized model for N2 and N2O production from nitrification and denitrification},
+  author={Parton, WJ and Mosier, AR and Ojima, DS and Valentine, DW and Schimel, DS and Weier, K and Kulmala, Airi E},
+  journal={Global biogeochemical cycles},
+  volume={10},
+  number={3},
+  pages={401--412},
+  year={1996},
+  publisher={Wiley Online Library}
+}

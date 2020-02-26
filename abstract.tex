@@ -1,0 +1,114 @@
+\documentclass[preprint,review, 12pt]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%%\documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% if you use PostScript figures in your article
+%% use the graphics package for simple commands
+%% \usepackage{graphics}
+%% or use the graphicx package for more complicated commands
+\usepackage{graphicx}
+%% or use the epsfig package if you prefer to use the old commands
+%% \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+\usepackage{lineno}
+
+
+
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+
+
+\journal{Journal of Hydrology}
+
+\begin{document}
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for the associated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for the associated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for the associated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%%
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+\title{Integrating Field Observations and Reactive Transport Modeling to Predict Watershed Water Quality under Environmental Perturbations}
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{<author name>}
+%% \address[label1]{<address>}
+%% \address[label2]{<address>}
+
+\author{Xingyuan Chen\corref{cor1}\fnref{label1}}
+\ead{Xingyuan.Chen@pnnl.gov}
+\fntext[label1]{Pacific Northwest National Laboratory, Richland, WA, United States}
+\author[label1]{Raymond Mark Lee}
+\author{Dipankar Dwivedi\fnref{label2}}
+\fntext[label2]{Lawrence Berkeley National Laboratory, Berkeley, CA, United States}
+\author[label1]{Kyongho Son}
+\author[label1]{Yilin Fang}
+\author[label1]{Xuesong Zhang}
+\author[label1]{Emily Graham}
+\author[label1]{James Stegen}
+\author{Joshua B. Fisher\fnref{label3}}
+\fntext[label3]{Jet Propulsion Laboratory, California Institute of Technology, Pasadena, CA, United States}
+\author{David Moulton\fnref{label4}}
+\fntext[label4]{Los Alamos National Laboratory, Los Alamos, NM, United States}
+\author[label1]{Timothy D. Scheibe}
+
+
+
+%\address{Atmospheric Science and Global Change Division, P.O. Box 999, Pacific Northwest National Laboratory, Richland, WA}
+
+\begin{abstract}
+%% Text of abstract
+Watersheds play a critical role in supplying water resources needed for human use and ecosystem health. Understanding and predicting how, when, and where changes in the quantity and quality of water resources occur under different environmental stresses including extreme events is crucial for sustainable management of water resources under a changing environment. However, few studies have attempted to quantify or identify the factors and process interactions controlling the impact of extreme events across watershed systems. Only few large-scale studies include coordinated monitoring and modeling efforts, which limits our ability to assess the large-scale impact of extreme events on water supply and quality. Methods are lacking to propagate uncertainty in process understanding through an integrated hydro-biogeochemical model framework and evaluate its importance, thus failing to take full advantage of the information potentially available through transformative advances in characterization technologies from high-resolution mass spectrometry to airborne and satellite-based remote sensing. There are consequent risks to our nation’s water security and to human and ecosystem health that may become exacerbated with the increasing frequency of extreme events that is projected for the coming decades. This paper reviews the current status of watershed science for both water quantity and quality and identifies critical gaps in our current knowledge and modeling capability in addressing the emergent needs in predicting watershed hydrologic and biogeochemical responses (i.e., water quantity and quality) under natural and anthropogenic perturbations. We highlight the need to (1) understand how environmental perturbations including extreme events like floods and droughts propagate through watershed systems and assess their short- and long-term impacts on watershed biogeochemistry, water quality and their recovery pathways; (2) develop and improve a watershed water quality model that reflects the state of scientific understanding gained from observations; and (3) construct a data-model fusion system for watershed characterization, process identification, and mechanistic model parameterization. A large base of modeling, monitoring and data capabilities have been built by various federal government agencies given the relevance of water to their critical missions. An emerging need is to build an integrated national capability for watershed water availability and quality that can address water-related missions across multiple federal agencies.
+\end{abstract}
+\end{frontmatter}
+\end{document}

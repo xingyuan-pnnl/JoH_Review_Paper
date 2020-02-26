@@ -1,0 +1,115 @@
+\documentclass[preprint,review, 12pt]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%%\documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% if you use PostScript figures in your article
+%% use the graphics package for simple commands
+%% \usepackage{graphics}
+%% or use the graphicx package for more complicated commands
+\usepackage{graphicx}
+%% or use the epsfig package if you prefer to use the old commands
+%% \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+\usepackage{lineno}
+
+
+
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+
+
+\journal{Journal of Hydrology}
+
+\begin{document}
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for the associated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for the associated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for the associated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%%
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+\title{Integrating Field Observations and Reactive Transport Modeling to Predict Watershed Water Quality under Environmental Perturbations}
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{<author name>}
+%% \address[label1]{<address>}
+%% \address[label2]{<address>}
+
+\author{Xingyuan Chen\corref{cor1}\fnref{label1}}
+\ead{Xingyuan.Chen@pnnl.gov}
+\fntext[label1]{Pacific Northwest National Laboratory, Richland, WA, United States}
+\author[label1]{Raymond Mark Lee}
+\author{Dipankar Dwivedi\fnref{label2}}
+\fntext[label2]{Lawrence Berkeley National Laboratory, Berkeley, CA, United States}
+\author[label1]{Kyongho Son}
+\author[label1]{Yilin Fang}
+\author[label1]{Xuesong Zhang}
+\author[label1]{Emily Graham}
+\author[label1]{James Stegen}
+\author{Joshua B. Fisher\fnref{label3}}
+\fntext[label3]{Jet Propulsion Laboratory, California Institute of Technology, Pasadena, CA, United States}
+\author{David Moulton\fnref{label4}}
+\fntext[label4]{Los Alamos National Laboratory, Los Alamos, NM, United States}
+\author[label1]{Timothy D. Scheibe}
+
+
+
+%\address{Atmospheric Science and Global Change Division, P.O. Box 999, Pacific Northwest National Laboratory, Richland, WA}
+
+\section {highlights}
+\item We need to understand how environmental perturbations including extreme events propagate through watershed systems;
+\item Current watershed models do not fully reflect current status of process understanding;
+\item A national integrated watershed modeling capability is needed to address water missions across multiple agencies.
+
+\end{frontmatter}
+\end{document}

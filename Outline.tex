@@ -1,0 +1,304 @@
+%% This is file `elsarticle-template-1-num.tex',
+%%
+%% Copyright 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%%
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%%
+%% $Id: elsarticle-template-1-num.tex 149 2009-10-08 05:01:15Z rishi $
+%% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
+%%
+\documentclass[preprint,review, 12pt]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% if you use PostScript figures in your article
+%% use the graphics package for simple commands
+%% \usepackage{graphics}
+%% or use the graphicx package for more complicated commands
+\usepackage{graphicx}
+%% or use the epsfig package if you prefer to use the old commands
+%% \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+\usepackage{lineno}
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+%% \biboptions{comma,round}
+
+% \biboptions{}
+
+
+
+\journal{Journal of Hydrology}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for the associated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for the associated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for the associated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%%
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+\title{Integrating Field Observations and Reactive Transport Modeling to Predict Watershed Water Quality under Environmental Perturbations}
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{<author name>}
+%% \address[label1]{<address>}
+%% \address[label2]{<address>}
+
+\author{Xingyuan Chen\corref{cor1}\fnref{label1}}
+\ead{Xingyuan.Chen@pnnl.gov}
+\fntext[label1]{Pacific Northwest National Laboratory, Richland, WA, United States}
+\author[label1]{Raymond Lee}
+\author{Dipankar Dwivedi\fnref{label2}}
+\fntext[label2]{Lawrence Berkeley National Laboratory, Berkeley, CA, United States}
+\author[label1]{Yilin Fang}
+\author[label1]{Xuesong Zhang}
+\author[label1]{Maoyi Huang}
+\author[label1]{Emily Graham}
+\author[label1]{James Stegen}
+\author[label1]{Tim Scheibe}
+\author{Scott Painter\fnref{label3}}
+\fntext[label3]{Oak Ridge National Laboratory, Oak Ridge, TN, United States}
+\author{David Moulton\fnref{label4}}
+\fntext[label4]{Los Alamos National Laboratory, Los Alamos, NM, United States}
+
+%\address{Atmospheric Science and Global Change Division, P.O. Box 999, Pacific Northwest National Laboratory, Richland, WA}
+
+\begin{abstract}
+%% Text of abstract
+Watersheds play a critical role in supplying water resources needed for human use and ecosystem health. Understanding and predicting how, when, and where changes in the quantity and quality of water resources occur under different environmental stresses including extreme events is crucial for sustainable management of water resources under a changing environment. However, few studies have attempted to quantify or identify the factors and process interactions controlling the impact of extreme events across watershed systems. Even fewer large-scale studies include coordinated monitoring and modeling efforts, which limits our ability to assess the large-scale impact of extreme events on water supply and quality. Methods are lacking to propagate uncertainty in process understanding through an integrated hydro-biogeochemical model framework and evaluate its importance, thus failing to take full advantage of the information potentially available through transformative advances in characterization technologies from high-resolution mass spectrometry to airborne and satellite-based remote sensing. There are consequent risks to our nation’s water security and to human and ecosystem health that may become exacerbated with the increasing frequency of extreme events that is projected for the coming decades. This paper reviews the the current status of watershed modeling for both water quantity and quality and identifies critical gaps in our current knowledge and modeling capability in addressing the emergent needs in predicting watershed hydrologic and biogeochemical responses (i.e., water quantity and quality) under natural and anthropogenic perturbations. We highlight the need to (1) understand how environmental perturbations including extreme events like floods and droughts propagate through watershed systems and assess their short- and long-term impacts on watershed biogeochemistry, water quality and their recovery pathways; (2) Develop and improve a watershed water quality model that reflects the state of scientific understanding gained from observations; and (3) Construct a data-model fusion system for watershed characterization, process identification, and mechanistic model parameterization. Bayesina Networks possess great potential to unite data-driven and process-based modeling approaches to identify and extract the most useful information out of observational data and predictive models. The data-model fusion will advance the fundamental understanding of hydro-biogeochemistry in watershed systems by iteratively asking questions like “What do we know about the system; How well are we translating that knowledge into predictive power; and How can we be more predictive?” and answering them with integrated sensitivity analyses, data assimilation, and mutual information analyses. Such systematic learning from data and models will not only lead to a new modeling capability for forecasting water quality and quantity in watersheds of various scales and land use patterns; it can also guide design of monitoring networks and experiments to collect the most valuable information to reduce uncertainty in predictive models. Ultimately, the data-model integration will link best-in-class modeling capabilities with the multi-agency long-term monitoring efforts to meet society’s needs under a changing environment, thus providing transferrable scientific tools to help manage vital watershed systems for sustained water security and human and ecosystem health.  
+\end{abstract}
+
+\begin{keyword}
+watershed science \sep extreme events \sep hydrologic modeling \sep Bayesian networks \sep monitoring network \sep data assimilation
+%% keywords here, in the form: keyword \sep keyword
+
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+
+\end{keyword}
+
+\end{frontmatter}
+
+
+%%
+%% Start line numbering here if you want
+%%
+\linenumbers
+
+\section{Introduction (Xingyuan, Scott, Dipankar)}
+\begin{enumerate} 
+\item Watersheds play important roles in supplying essential resources and ecosystem services to society
+\item Watersheds are under stress due to shifts in climate conditions and anthropogenic activities (land use change, damming, atmospheric depositions responding to human activities). water quantity and water quality are both concerns for water security.
+
+Coupled transport of water and dissolved substances (e.g., nutrients and organic matter) from different locations in the watershed controls hydro-biogeochemical reaction rates and consequently impacts downstream water quantity and quality. Accurate characterization of hydrologic flowpaths and fate and transport of these dissolved substances is important to correctly predict ecosystem function and resource availability for human use. Watershed modelers commonly use numerical models to characterize fate and transport mechanisms at smaller scales (e.g., pore, hillslope, and stream reach scales), which are then integrated to the larger watershed scale. Watershed hydro-biogeochemical processes are sensitive to exogenous water and energy balances, and are thus responsive to environmental changes in, for example, precipitation, solar radiation, and nutrient loading. Numerical modeling efforts inform us how fate and transport processes will respond, as anthropogenic activities (e.g., agriculture, energy production, land-use change, and contaminant exposure) change natural patterns in climate forcing and nutrient loading, and, consequently, watershed function. 
+
+However, anthropogenic activities can lead to extreme responses and feedbacks. Recent hydrologic and energetic events have been extreme and these extreme events are forecast to continue. Climate change has not only shifted average meteorological conditions but also led to an increased number of extreme events, illustrated by the recent examples of Hurricane Katrina, Hurricane Irene, Tropical Storm Lee, and Hurricane Harvey, all of which resulted in record-breaking rainfall totals and billions of dollars in loss and damages.  High-intensity events, such as tropical cyclones, usually lead to pulse responses in water quality, with large changes in chemical concentrations and fluxes occurring over relatively large areas and over short time periods. For example, Hurricane Irene and Tropical Storm Lee led to unprecedented increases in the concentrations and loads of total suspended solids (TSS), particulate organic carbon (POC), and dissolved organic carbon (DOC) as they moved through Maryland and Pennsylvania. Ten-fold increases in DOC and hundred-fold increases in POC were observed in Maryland; hundred-fold increases in TSS concentrations occurred in Pennsylvania. High runoff induced by tropical cyclones had large impacts on annual N and phosphorus (P) fluxes and mobilized and transported terrestrial-derived C to estuaries. Particulate loads (e.g., POC, particulate phosphorous, TSS) occurring during Irene and Lee accounted for more than 30\% of the annual discharge concentration in many places.
+
+A diversity of water quality responses to environmental changes may occur, depending on the intensity, duration, and magnitude of an event. Various numerical modeling approaches simulate well the hydro-biogeochemical responses to most events in the subsurface and surface water domains, though  simulations of responses to extreme events continue to contain high uncertainty. Understanding and predicting how, when, and where changes in the quantity and quality of water resources occur requires deep insight into the physical and biological mechanisms that govern the cycling and transport of water and elements across complex watersheds under a wide spectrum of environmental stresses. Currently, the spectrum of environmental stresses that have been modeled is data sparse, particularly with respect to extreme events, and there is high variability in the relatively few end member observations against which models are calibrated. 
+
+Such model uncertainty suggests the need to improve in silico representations of hydro-biogeochemical processes through additional input of data (i.e., data-driven approach) or by using a different modeling approach (i.e., deep learning-based approach), or a combination of the two. Additional field-based observations help resolve how water moves across landscapes, its residence time, and what the biogeochemical properties are along various flow paths during extreme events. Long-term monitoring efforts should be tightly coupled with process-based models that span the disciplinary boundaries of hydrology, geochemistry, microbiology, ecology, and atmospheric sciences, to pursue causation, identify when and where the hydrological and biogeochemical processes are most sensitive to environmental changes at various severities, and get “the right answers for the right reasons.” Decreasing model uncertainty better informs sustainable management of watershed systems under forecast envrionmental stresses, which is critical for enhancing our economical and societal resilience.
+\item While extreme events are projected to continue and intensify, understanding of watershed responses under those events are lacking
+    \begin{enumerate}
+        \item Recent extreme hydrologic events (Hurricanes and droughts) and impacts to society, follow-up studies on ecosystem recovery 
+        \item Hydrologic flowpaths and fate and transport of dissolved substances within a watershed is important to understand watershed responses to various perturbations    
+        \item High-intensity events, such as tropical cyclones, usually lead to pulse responses in water quality, with large changes in chemical concentrations and fluxes occurring over relatively large areas and over short time periods. For example, TSS, POC and DOC responses observed during Hurricane Irene and Tropical Storm Lee.
+        \item Watershed responses during drought events
+        \item Compounded watershed responses after a series of extreme events: for example, flood after prolonged drought, atmospheric river after fire, etc
+    \end{enumerate}
+
+\item Numerical modeling is a critical tool for predicting watershed hydro-biogeochemical responses to perturbations in subsurface and surface water domains.
+    \begin{enumerate}
+        \item Some history on empirical and mechanistic modeling (to the point of WRF-Hydro and National Water Model)
+        \item Predicting how, when, and where changes in the quantity and quality of water resources occur requires deep insight into the physical and biological mechanisms
+        \item Simulations of responses to extreme events continue to contain high uncertainty
+        \item Extreme end of the spectrum of environmental stresses that have been modeled is data sparse
+        \item High variability in forcing and the relatively few end member observations against which models are calibrated
+    \end{enumerate}
+    
+\item The objectives of this review paper are to: (1) review the current status of watershed modeling and monitoring in understanding watershed hydrobiogeochemical processes and predicting water quantity and quality; (2) identify the key knowledge and capability gaps; and (3) present a path forward to integrate modeling and observations to advance predictive understanding of watershed hydrobiogeochemical responses to perturbations.
+\end{enumerate}
+
+\section{Current Knowledge and Gaps in Watershed Studies}
+    \begin{enumerate}
+    \item Current status of process understanding 
+         \begin{enumerate}
+            \item hydrologic and ecohydrologic processes (Ray)
+            \item biogeochemcial processes including microbial (Emily)
+            \item interactions and coupling between them (Yilin and Emily)
+            \item heterogeneity and scaling
+            \item monitoring efforts (James)
+            \item gauged vs ungauged
+        \end{enumerate}
+    \item Current numerical modeling approaches
+        \begin{enumerate}
+        \item Commonly-used numerical models
+            \begin{enumerate}
+                \item A table summarizing codes and processes they are most known for and mature in representing hydrologic, biogeochemical, and the interactions, and their HPC capability. (Xuesong)
+                \item Best practices (Xingyuan)
+                    \begin{enumerate}
+                        \item Optimization/calibration
+                        \item Validation
+                        \item Quantification of fit
+                        \item Sensitivity analyses
+                        \item Uncertainty analyses
+                    \end{enumerate}
+                \end{enumerate}    
+        \item Challenges and gaps in mechanistically representing hydro-biogeochemical processes in numerical models
+            \begin{enumerate}
+                \item Hydrologic flow paths vary spatiotemporally, e.g., Base flow vs. stormflow activate different flow paths and contributing source areas. (Ray and Xingyuan)
+                \item Threshold-dependent preferential flow is hard to capture mechanistically (Ray and Xingyuan)
+                \item Transport processes must be coupled with element-specific reaction processes over a heterogeneous/patchy landscape. Events can be highly localized in the watershed, causing hydro-biogeochemical interactions. (Ray)
+                \item land-surface processes (Maoyi)
+                \item representing atmospheric forcing (Maoyi)
+                \item human activities (Maoyi)
+                \item Important processes often occur within confined domains such as river corridors (Yilin and Scott)
+                \item Scaling and modeling multi-scale heterogeneity across a large landscape (Dipankar)
+                \item Modelers have limited data. Suitable measures for estimating key variables are lacking.(Xingyuan)
+                \item Model-data integration activity is computationally expensive. Increasing complexity of models inhibits broad community use of sensitivity analyses. There is unused information in observation data. (Xingyuan)
+            \end{enumerate}
+        \end{enumerate} 
+        \item Watershed Studies under Mild and Extreme Perturbations remains wide open due to difficulties in obtaining field observations and process-based studies (Xingyuan and Ray)
+    \end{enumerate}     
+
+\section{Future: Integration of existing monitoring networks with improved process-based modeling to advance predictive understanding}
+\begin{enumerate} 
+    \item Improve multi-scale observations
+        \begin{enumerate}
+            \item integrating isotope observations (Ray)
+            \item modern sources of spatial and temporal data for watershed modeling, inlcuding remote sensing (Dipankar and Tim)
+            \item Leverage information from DOE facilities
+                \begin{enumerate}
+                    \item Joint Genome Institute (JGI) (Emily and James)
+                    \item Environmental Molecular Sciences Laboratory (EMSL) (Emily,James, Tim)
+                    \item Systems Biology Knowledgebase (KBase)(Xingyuan and Hyun)
+                    \item Ameriflux (Maoyi)
+                    \item Environmental Systems Science Data Infrastructure for a Virtual Ecosystem (ESS-Dive)
+                    \item Worldwide Hydrobiogeochemistry Observation Network for Dynamic River Systems (Whondrs)(James)
+                \end{enumerate}
+            \item Open science concept (James)
+        \end{enumerate}
+    \item Improve mechanistic representations in numerical models
+        \begin{enumerate}   
+            \item particle tracking for flow path visualization and analyses, as well as residence time estimation (Xingyuan and Xuehang)
+            \item incorporating reactive transport modeling capabilities in watershed models to reflect the importance of (1) organic carbon chemistry on biogeochmeical cycling/redox processes, (2) microbial community dynamics, and (3) responses to extreme events (chemical cocktail concept) (Dipankar, Scott)
+            \item capturing hot spots and hot moments
+            \item how to bridge between scales
+        \end{enumerate}
+    \item Systematic extraction of information from both observations and modeling for learning watershed systems to reduce uncertainty (Xingyuan)
+        \begin{enumerate}
+            \item sensitivity analyses
+            \item data assimilation
+            \item model structural diagnosis
+            \item information theory
+            \item use of deep learning 
+        \end{enumerate}
+    \item Leveraging computational power, improve code modularity and interoperability, and automate workflow (David, Scott)
+        \begin{enumerate}
+            \item Supercomputing, exa-scale
+            \item community-oriented design of software (from silos to ecosystem)
+            \item Jupyter Notebook-based narrative:Makes model more accessible to the broader community
+        \end{enumerate}
+\end{enumerate}   
+
+
+\section{Conclusion}
+\begin{enumerate} 
+    \item Summary (Ray and Xingyuan)
+    \item Next steps: multi-agency efforts (Tim S.)
+ \end{enumerate}
+
+
+
+
+%\bibliographystyle{model1-num-names}
+\bibliographystyle{elsarticle-num}
+%\bibliography{references.bib} % I moved references from "references.bib" to "References.bib" -RML
+\bibliography{References.bib}
+
+%% Authors are advised to submit their bibtex database files. They are
+%% requested to list a bibtex style file in the manuscript if they do
+%% not want to use model1-num-names.bst.
+
+%% References without bibTeX database:
+
+% \begin{thebibliography}{00}
+
+%% \bibitem must have the following form:
+%%   \bibitem{key}...
+%%
+
+% \bibitem{}
+
+% \end{thebibliography}
+
+
+\end{document}
+
+%%
+%% End of file `elsarticle-template-1-num.tex'.
