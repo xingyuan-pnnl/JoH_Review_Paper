@@ -82,14 +82,6 @@ year = {2018}
   year={2005},
   publisher={The Pennsylvania State University}
 }
-
-@phdthesis{thornton1998regional,
-  title={Regional ecosystem simulation: combining surface-and satellite-based observations to study linkages between terrestrial energy and mass budgets},
-  author={Thornton, Peter Edmond},
-  year={1998},
-  publisher={The University of Montana}
-}
-
 @article{parton1996generalized,
   title={Generalized model for N2 and N2O production from nitrification and denitrification},
   author={Parton, WJ and Mosier, AR and Ojima, DS and Valentine, DW and Schimel, DS and Weier, K and Kulmala, Airi E},
@@ -99,4 +91,91 @@ year = {2018}
   pages={401--412},
   year={1996},
   publisher={Wiley Online Library}
+}
+@article{Zhang2017,
+abstract = {Large-scale, long-term and high spatial resolution simulation is a common issue in environmental modeling. A Gridded Hydrologic Response Unit (HRU)-based Soil and Water Assessment Tool (SWATG) that integrates grid modeling scheme with different spatial representations also presents such problems. The time-consuming problem affects applications of very high resolution large-scale watershed modeling. The OpenMP (Open Multi-Processing) parallel application interface is integrated with SWATG (called SWATGP) to accelerate grid modeling based on the HRU level. Such parallel implementation takes better advantage of the computational power of a shared memory computer system. We conducted two experiments at multiple temporal and spatial scales of hydrological modeling using SWATG and SWATGP on a high-end server. At 500-m resolution, SWATGP was found to be up to nine times faster than SWATG in modeling over a roughly 2000 km2 watershed with 1 CPU and a 15 thread configuration. The study results demonstrate that parallel models save considerable time relative to traditional sequential simulation runs. Parallel computations of environmental models are beneficial for model applications, especially at large spatial and temporal scales and at high resolutions. The proposed SWATGP model is thus a promising tool for large-scale and high-resolution water resources research and management in addition to offering data fusion and model coupling ability.},
+author = {Zhang, Ying and Hou, Jinliang and Cao, Yongpan and Gu, Juan and Huang, Chunlin},
+doi = {10.1016/j.cageo.2017.08.002},
+file = {:C$\backslash$:/Users/sonk739/OneDrive - PNNL/papers//Zhang et al. - 2017 - OpenMP parallelization of a gridded SWAT (SWATG).pdf:pdf},
+issn = {00983004},
+journal = {Computers and Geosciences},
+keywords = {Grid,Hydrological model,OpenMP,Parallel,SWAT},
+number = {August},
+pages = {228--237},
+publisher = {Elsevier Ltd},
+title = {{OpenMP parallelization of a gridded SWAT (SWATG)}},
+url = {https://doi.org/10.1016/j.cageo.2017.08.002},
+volume = {109},
+year = {2017}
+}
+
+@article{Wu2013,
+abstract = {With the increasing knowledge about the natural processes, hydrological models such as the Soil and Water Assessment Tool (SWAT) are becoming larger and more complex with increasing computation time. Additionally, other procedures such as model calibration, which may require thousands of model iterations, can increase running time and thus further reduce rapid modeling and analysis. Using the widely-applied SWAT as an example, this study demonstrates how to parallelize a serial hydrological model in a Windows{\textregistered} environment using a parallel programing technology-Message Passing Interface (MPI). With a case study, we derived the optimal values for the two parameters (the number of processes and the corresponding percentage of work to be distributed to the master process) of the parallel SWAT (P-SWAT) on an ordinary personal computer and a work station. Our study indicates that model execution time can be reduced by 42{\%}-70{\%} (or a speedup of 1.74-3.36) using multiple processes (two to five) with a proper task-distribution scheme (between the master and slave processes). Although the computation time cost becomes lower with an increasing number of processes (from two to five), this enhancement becomes less due to the accompanied increase in demand for message passing procedures between the master and all slave processes. Our case study demonstrates that the P-SWAT with a five-process run may reach the maximum speedup, and the performance can be quite stable (fairly independent of a project size). Overall, the P-SWAT can help reduce the computation time substantially for an individual model run, manual and automatic calibration procedures, and optimization of best management practices. In particular, the parallelization method we used and the scheme for deriving the optimal parameters in this study can be valuable and easily applied to other hydrological or environmental models. {\textcopyright} 2013.},
+author = {Wu, Yiping and Li, Tiejian and Sun, Liqun and Chen, Ji},
+doi = {10.1016/j.envsoft.2013.02.002},
+file = {:C$\backslash$:/Users/sonk739/OneDrive - PNNL/papers//Wu et al. - 2013 - Parallelization of a hydrological model using the message passing interface.pdf:pdf},
+issn = {13648152},
+journal = {Environmental Modelling and Software},
+keywords = {Hydrological model,Message passing,Parallelization,SWAT},
+pages = {124--132},
+publisher = {Elsevier Ltd},
+title = {{Parallelization of a hydrological model using the message passing interface}},
+url = {http://dx.doi.org/10.1016/j.envsoft.2013.02.002},
+volume = {43},
+year = {2013}
+}
+@article{Goeking2020,
+abstract = {AbstractIn coniferous western forests, recent widespread tree mortality provided opportunities to test the long-held theory that forest cover loss increases water yield. We reviewed 78 studies of hydrologic response to standing-replacing (severe wildfire, harvest) or nonstand-replacing (drought, insects, low-severity wildfire) disturbances, and reassessed the question: Does water yield or snowpack increase after forest disturbance? Collective results indicate that postdisturbance streamflow and snowpack may increase, not change, or even decrease, and illuminate factors that may help improve predictability of hydrologic response to disturbance. Contrary to the expectation that tree mortality reduces evapotranspiration, making more water available as runoff, postdisturbance evapotranspiration sometimes increased—particularly following nonstand-replacing disturbance—because of (a) increased evaporation resulting from higher subcanopy radiation, and (b) increased transpiration resulting from rapid postdisturbance growth. Postdisturbance hydrologic response depends on vegetation structure, climate, and topography, and new hypotheses continue to be formulated and tested in this rapidly evolving discipline.},
+author = {Goeking, Sara A and Tarboton, David G},
+doi = {10.1093/jofore/fvz069},
+file = {:C$\backslash$:/Users/sonk739/OneDrive - PNNL/papers/Goeking, Tarboton - 2020 - Forests and Water Yield A Synthesis of Disturbance Effects on Streamflow and Snowpack in Western Coniferous F.pdf:pdf},
+issn = {0022-1201},
+journal = {Journal of Forestry},
+keywords = {1,alden hibbert concisely formulated,coniferous forests,forest cover and water,forest disturbance,forest hydrology,in 1967,long-lived hypotheses about the,reduction of forest,relation between,snow water equivalent,snowpack,streamflow,three,water yield,yield},
+number = {2},
+pages = {172--192},
+title = {{Forests and Water Yield: A Synthesis of Disturbance Effects on Streamflow and Snowpack in Western Coniferous Forests}},
+volume = {118},
+year = {2020}
+}
+@article{Oda2018,
+author = {Oda, Tomoki and Green, Mark B. and Urakawa, Rieko and Scanlon, Todd M. and Sebestyen, Stephen D. and McGuire, Kevin J. and Katsuyama, Masanori and Fukuzawa, Karibu and Adams, Mary B. and Ohte, Nobuhito},
+doi = {10.1029/2017WR021986},
+file = {:C$\backslash$:/Users/sonk739/OneDrive - PNNL/papers/Oda et al. - 2018 - Stream Runoff and Nitrate Recovery Times After Forest Disturbance in the USA and Japan.pdf:pdf},
+issn = {00431397},
+journal = {Water Resources Research},
+keywords = {10.1029/2017WR021986 and Stream runoff,forest disturbance,nitrate concentration,recovery time},
+title = {{Stream Runoff and Nitrate Recovery Times After Forest Disturbance in the USA and Japan}},
+url = {http://doi.wiley.com/10.1029/2017WR021986},
+year = {2018}
+}
+@article{Wagner2014a,
+abstract = {In 2003, the Lost Creek wildfire severely burned 21,000 hectares of forest on the eastern slopes of the Canadian Rocky Mountains. Seven headwater catchments with varying levels of disturbance (burned, post-fire salvage logged, and unburned) were instrumented as part of the Southern Rockies Watershed Project to measure streamflow, stream temperature, and meteorological conditions. From 2004 to 2010 mean annual stream temperature (Ts) was elevated 0.8-2.1. °C in the burned and post-fire salvage logged streams compared to the unburned streams. Mean daily maximum Ts was 1.0-3.0. °C warmer and mean daily minimum Ts was 0.9-2.8. °C warmer in the burned and post-fire salvage logged streams compared to the unburned catchments. The effects of wildfire on the thermal regime of the burned catchments were persistent and trend analysis showed no apparent recovery during the study period. Temporal patterns of Ts were strongly associated with seasonal variability of surface and groundwater interactions and air temperature. Advective heat fluxes between groundwater and surface water were likely the dominant controls on Ts, though the strength of these advective controls varied among catchments highlighting the importance of simultaneous catchment-scale and process-focused research to better elucidate the physical drivers influencing Ts response to disturbance.},
+author = {Wagner, Michael J. and Bladon, Kevin D. and Silins, Uldis and Williams, Chris H S and Martens, Amanda M. and Boon, Sarah and MacDonald, Ryan J. and Stone, Micheal and Emelko, Monica B. and Anderson, Axel},
+doi = {10.1016/j.jhydrol.2014.05.006},
+file = {:Users/sonk739/OneDrive - PNNL/papers/Wagner et al. - 2014 - Catchment-scale stream temperature response to land disturbance by wildfire governed by surface–subsurface ener.pdf:pdf},
+issn = {00221694},
+journal = {Journal of Hydrology},
+keywords = {Forest disturbance,Headwaters,Rocky Mountains,Salvage harvesting,Stream temperature,Wildfire},
+month = {sep},
+pages = {328--338},
+publisher = {Elsevier B.V.},
+title = {{Catchment-scale stream temperature response to land disturbance by wildfire governed by surface-subsurface energy exchange and atmospheric controls}},
+url = {http://linkinghub.elsevier.com/retrieve/pii/S0022169414003606},
+volume = {517},
+year = {2014}
+}
+@article{Hanan2017,
+abstract = {Climate change models predict that interannual rainfall variability will increase in California over the next several decades; these changes will likely influence how frequently California ecosystems burn and how they respond to fire. Fires uncouple N mobilization from uptake by destroying plant biomass and increasing nitrification. Following fire, autumn and winter rains can leach N into streams from slopes that have been denuded. The amount of N exported depends on how rapidly soil microbes metabolize it into mobile forms such as NO − 3 , and the rate that recovering plants take up available N. However, the long-term effects of a changing climate on postfire N dynamics remain unknown. We used the ecohydrologic model RHESSys (regional hydro-ecologic simulation system) to evaluate how interannual climate variability may affect the magnitude of N mineralization, nitrification, N export, and plant recovery following fire. N export was highest when fire was followed by drought; even though there was less water moving through the system, dry conditions prolonged the period during which N mobilization was decoupled from plant uptake. We also found that the effects of drought on N export were magnified in stands dominated by obligate seeders, which initially recovered more slowly than resprouters. These findings suggest that climate may regulate N balance most powerfully by influencing how quickly plants " turn on " and begin to immobilize N.},
+author = {Hanan, Erin J. and Tague, Christina Naomi and Schimel, Joshua P.},
+doi = {10.1002/ecm.1234},
+file = {:Users/sonk739/OneDrive - PNNL/papers//Hanan, Tague, Schimel - 2017 - Nitrogen cycling and export in California chaparral The role of climate in shaping ecosystem responses to.pdf:pdf},
+issn = {15577015},
+journal = {Ecological Monographs},
+keywords = {Chaparral,Climate change,Ecohydrology modelling,Leaching; mechanistic model,Mediterranean-type ecosystems,Mineralization,Nitrification,Plant-soil-water interactions,Regional hydro-ecologic simulation system,Semiarid,Wildfire},
+number = {1},
+pages = {76--90},
+title = {{Nitrogen cycling and export in California chaparral: The role of climate in shaping ecosystem responses to fire}},
+volume = {87},
+year = {2017}
 }
